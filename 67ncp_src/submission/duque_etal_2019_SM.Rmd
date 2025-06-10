@@ -1,0 +1,56 @@
+---
+title             : "Supplementary Materials: Effects of mesotocin on social bonding in pinyon jays"
+shorttitle        : "Supplementary Materials"
+
+author: 
+  - name          : "Juan F. Duque"
+    affiliation   : "1,2"
+    corresponding : yes    # Define only one corresponding author
+    address       : "450 South Easton Road, 125 Boyer Hall, Arcadia University, Glenside, PA 19038"
+    email         : "jfduque89@gmail.com"
+  - name          : "Tanner Rasmussen"
+    affiliation   : "1"
+  - name          : "Anna Rodriguez"
+    affiliation   : "1"
+  - name          : "Jeffrey R. Stevens"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "University of Nebraska-Lincoln"
+  - id            : "2"
+    institution   : "Arcadia University"
+
+
+figsintext        : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : yes
+
+lang              : "english"
+class             : "doc"
+keep_tex          : "TRUE"
+output            : papaja::apa6_pdf
+---
+
+```{r include = FALSE}
+library(here)
+library(papaja)
+```
+
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
+
+<!--(Figure S1)-->
+```{r session-pair, fig.cap = "Pair-formation phase pair proximities for each session and condition in Experiment 1 (6 pairs) and Experiment 2 (12 pairs). Experiment 1 showed no effect of hormone condition or session on distance, but Experiment 2 showed a decrease in distance over session. Symbols represent means, error bars represent between-pair confidence intervals.", out.width = "100%"}
+knitr::include_graphics(path = here(c("figures/session_pair_phase.png")))
+```
+
+<!--(Figure S1)-->
+```{r session-group, fig.cap = "Pair-maintenance phase pair proximities for each session and condition in Experiment 1 (6 pairs) and Experiment 2 (12 pairs). In Experiment 1, pair distances decreased over session, but hormone condition did not influence distances. In Experiment 2, neither hormone condition nor session influenced distance. Symbols represent means, error bars represent between-pair confidence intervals.", out.width = "100%"}
+knitr::include_graphics(path = here(c("figures/session_group_phase.png")))
+```
+
